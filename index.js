@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended:true}))
 
 app.get('/', (req, res) => {
-    res.send('hello world')
+    res.send('hello to see the calculation kindly enter the url as follows https://..../add?a={value1}&b={value2}')
   })
 
 app.post('/',(req,res)=>{
