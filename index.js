@@ -9,13 +9,6 @@ app.get('/', (req, res) => {
     res.send('hello to see the calculation kindly enter the url as follows https://..../add?a={value1}&b={value2}')
   })
 
-app.post('/',(req,res)=>{
-    const n1 = parseInt(req.body.num1)
-    const n2 = parseInt(req.body.num2)
-    const add_cal = n1+n2
-    res.send(`result: ${add_cal}`)
-})
-
 app.get('/add', (req, res) => {
     let rs = 0;
     let a = parseInt(req.query.a)
